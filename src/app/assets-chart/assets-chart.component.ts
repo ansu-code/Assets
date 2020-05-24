@@ -5,8 +5,8 @@ import * as am4themes_animated from "@amcharts/amcharts4/themes/animated.js"
 
 @Component({
   selector: 'app-assetschart',
-  templateUrl: './assetschart.component.html',
-  styleUrls: ['./assetschart.component.scss']
+  templateUrl: './assets-chart.component.html',
+  styleUrls: ['./assets-chart.component.scss']
 })
 export class AssetschartComponent implements OnInit, AfterViewInit {
 
