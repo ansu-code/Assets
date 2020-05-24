@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AssetschartComponent } from './assetschart/assetschart.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: 'assetschart',component: AssetschartComponent},
+  { path: '',   redirectTo: '/assetschart', pathMatch: 'full' }, 
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
