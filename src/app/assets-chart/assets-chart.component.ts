@@ -115,6 +115,8 @@ export class AssetschartComponent implements OnInit, AfterViewInit {
     dateAxis2.renderer.grid.template.strokeOpacity = 0.07;
     dateAxis.renderer.grid.template.strokeOpacity = 0.07;
     valueAxis.renderer.grid.template.strokeOpacity = 0.07;
+    dateAxis.renderer.labels.template.disabled = true;
+    dateAxis2.renderer.labels.template.disabled = true;
   }
 
 }
