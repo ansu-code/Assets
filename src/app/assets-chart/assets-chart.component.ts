@@ -53,7 +53,7 @@ console.log(dateAxis.groupCount);
 var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 
 // Create series
-var series = chart.series.push(new am4charts.ColumnSeries());
+var series = chart.series.push(new am4charts.LineSeries());
 series.dataFields.valueY = "value";
 series.dataFields.dateX = "date";
 series.tooltipText = "{value}"
