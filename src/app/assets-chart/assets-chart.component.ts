@@ -169,9 +169,10 @@ document.getElementById("chkStack").addEventListener("change", function() {
   }
 });
 
-document.getElementById("chkStack").addEventListener("click", function() {
- 
-}
+document.getElementById("minute").addEventListener("click", function() {
+ //var newData=data.filter();
+ //chart.data=newData;
+});
 
   }
   }
