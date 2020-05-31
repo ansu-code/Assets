@@ -96,6 +96,7 @@ series.dataFields.valueY = "value";
 series.tooltipText = "{valueY.value} {unit}";
 series.fill = am4core.color("#e59165");
 series.stroke = am4core.color("#e59165");
+series.tensionX = 0.8;
 //series.strokeWidth = 3;
 
 var series2 = chart.series.push(new am4charts.LineSeries());
@@ -107,6 +108,7 @@ series2.xAxis = dateAxis2;
 series2.tooltipText = "{valueY.value} {unit2}";
 series2.fill = am4core.color("#dfcc64");
 series2.stroke = am4core.color("#dfcc64");
+series2.tensionX = 0.8;
 //series2.strokeWidth = 3;
 
 chart.cursor = new am4charts.XYCursor();
@@ -116,6 +118,7 @@ var scrollbarX = new am4charts.XYChartScrollbar();
 //scrollbarX.series.push(series);
 //scrollbarX.series.push(series2);
 chart.scrollbarX = scrollbarX;
+//chart.scrollbarX.thumb.minWidth = 50;
 
 chart.legend = new am4charts.Legend();
 chart.legend.parent = chart.plotContainer;
@@ -127,6 +130,7 @@ dateAxis.renderer.grid.template.strokeOpacity = 0.07;
 valueAxis.renderer.grid.template.strokeOpacity = 0.07;
 //dateAxis.renderer.labels.template.disabled = true;
 dateAxis2.renderer.labels.template.disabled = true;
+
 
 //dateAxis.events.on("startchanged", categoryAxisZoomed);
 //dateAxis.events.on("endchanged", categoryAxisZoomed);
@@ -149,11 +153,13 @@ document.getElementById("chkStack").addEventListener("change", function() {
     chart.leftAxesContainer.layout = "vertical";
     //valueAxis.marginTop = 10;
     valueAxis.marginBottom = 20;
+    
 
   }
   else
   {
     chart.leftAxesContainer.layout = "horizontal";
+    
     
     //chart.data = data;
     
@@ -163,5 +169,9 @@ document.getElementById("chkStack").addEventListener("change", function() {
   }
 });
 
-  } 
+document.getElementById("chkStack").addEventListener("click", function() {
+ 
+}
+
+  }
   }
